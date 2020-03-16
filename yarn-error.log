@@ -1,0 +1,55 @@
+Arguments: 
+  /Users/gabriel/.nvm/versions/node/v10.15.3/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js
+
+PATH: 
+  /Users/gabriel/.nvm/versions/node/v10.15.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/gabriel/.nvm/versions/node/v10.15.3/bin:/Users/gabriel/Library/Android/sdk/tools:/Users/gabriel/Library/Android/sdk/platform-tools:/Users/gabriel/Library/Android/sdk/tools:/Users/gabriel/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/gabriel/Documents/Desenvolvimento/pessoal/icenh/backend/package.json: Unexpected token } in JSON at position 566
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "nodemon src/server.js",
+      "build": "sucrase ./src -d ./dist --transforms imports",
+      "start": "node dist/server.js"
+    },
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "multer": "^1.4.2",
+      "path": "^0.12.7",
+      "pg": "^7.18.1",
+      "pg-hstore": "^2.3.3",
+      "sequelize": "^5.10.2",
+      "yup": "^0.28.3"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
