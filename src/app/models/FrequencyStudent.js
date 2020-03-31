@@ -15,16 +15,16 @@ class FrequencyStudent extends Model {
     return this;
   }
 
-  static associate(models) {
-    this.belongsTo(models.Frequency, {
-      foreignKey: 'id_frequency',
-      as: 'frequency',
-    });
-    this.belongsTo(models.Student, {
-      foreignKey: 'id_student',
-      as: 'student',
-    });
-  }
+  // static associate(models) {
+  //   this.belongsTo(models.Frequency, {
+  //     foreignKey: 'id_frequency',
+  //     as: 'frequency',
+  //   });
+  //   this.belongsTo(models.Student, {
+  //     foreignKey: 'id_student',
+  //     as: 'student',
+  //   });
+  // }
 }
 
 export default FrequencyStudent;

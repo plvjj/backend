@@ -6,6 +6,7 @@ class Frequency extends Model {
       {
         id_user: Sequelize.INTEGER,
         training_date: Sequelize.DATEONLY,
+        frequency: Sequelize.BOOLEAN,
       },
       {
         sequelize,

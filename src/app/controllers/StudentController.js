@@ -7,7 +7,16 @@ class StudentController {
     const { id } = req.params;
 
     if (id) {
-      const student = await Student.findByPk(id);
+      const student = await Student.findOne({
+        where: { id },
+        include: [
+          {
+            model: File,
+            as: 'avatar',
+            attributes: ['path', 'url'],
+          },
+        ],
+      });
 
       return res.json(student);
     }
